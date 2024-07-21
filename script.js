@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
     function saveTasks() {
         localStorage.setItem('tasks', JSON.stringify(tasks));
     }
-
     // Function to render tasks
     function renderTasks() {
         taskList.innerHTML = '';

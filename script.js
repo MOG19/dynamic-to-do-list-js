@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
         taskList.innerHTML = '';
         tasks.forEach(task => {
             const listItem = document.createElement('li');
-            listItem.textContent = task;
+            listItem.textContent = task; 
 
             const removeButton = document.createElement('button');
             removeButton.textContent = 'Remove';

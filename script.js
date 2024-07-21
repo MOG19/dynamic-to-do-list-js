@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Function to add a new task
     function addTask() {
+        ["classList.add"]
         const taskText = taskInput.value.trim();
         if (taskText === '') {
             alert('Please enter a task.');

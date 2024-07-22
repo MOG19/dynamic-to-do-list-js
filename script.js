@@ -62,8 +62,8 @@
 // });
 
 
+
 document.addEventListener('DOMContentLoaded', function() {
-    // Select the DOM elements
     const addButton = document.getElementById('add-task-btn');
     const taskInput = document.getElementById('task-input');
     const taskList = document.getElementById('task-list');
@@ -99,7 +99,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Function to add a new task
     function addTask() {
-        ["classList.add"]
         const taskText = taskInput.value.trim();
         if (taskText === '') {
             alert('Please enter a task.');
@@ -109,6 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
         tasks.push(taskText);
         saveTasks();
         renderTasks();
+
         taskInput.value = '';
     }
 
